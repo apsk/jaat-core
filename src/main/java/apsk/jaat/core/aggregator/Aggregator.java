@@ -14,6 +14,6 @@ public interface Aggregator {
     Stream<Option> getOptions();
     String getOption(String name);
     void setOption(String name, String value) throws ValidationException;
-    Map<String, String> receiveData();
+    Stream<Map<String, String>> receiveData();
     BooleanProperty isActive();
 }
